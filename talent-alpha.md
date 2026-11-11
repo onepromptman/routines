@@ -1,10 +1,10 @@
 # Recipe: Talent Alpha every night
 
-**Untested.** Nobody has run this recipe as a scheduled task yet. The plugin itself says its memory between scheduled runs is unproven until two runs on different days pass.
+**Not yet proven.** Two manual runs on 2026-11-10, with plugin version 1.4.0, finished without errors but found no news recent enough to show, so no card or memory file was made yet. The plugin itself says its memory between scheduled runs is unproven until two runs on different days pass.
 
 | | |
 |---|---|
-| Plugin | Talent Alpha 1.4.0, from [onepromptman/talent-alpha](https://github.com/onepromptman/talent-alpha) |
+| Plugin | Talent Alpha 1.4.0 or later, from [onepromptman/talent-alpha](https://github.com/onepromptman/talent-alpha) |
 | Runs | On your computer, as a local scheduled task in the Claude desktop app |
 | Timetable | Daily, 6:07 AM |
 | Writes to | The folder you pick for the task |
@@ -53,12 +53,12 @@ These questions are already answered:
 - No extra context for this run. Treat the braindump invitation as "skip".
 - Use max_shown and include_funding_distress from the profile.
 
-1. If this session has no WebSearch tool, report "no web search, scan did not run" and stop. Never report that as a quiet night.
+1. If you cannot use the WebSearch tool, even after loading it with ToolSearch, report "no web search, scan did not run" and stop. Never report that as a quiet night.
 2. If the profile has no "## Kit: talent-alpha" block, or the block carries setup_incomplete, report that and stop.
 3. Run the talent-alpha:talent-alpha skill, with that plugin prefix. Use the state_file path from the profile, and never delete or move that file.
 4. If an agent halts needing input, do not ask. Stop, list what it needed, and do not record state.
 5. Contact nobody. Send, post, publish and push nothing. Open no browser and no file in a window.
-6. Report, in this order: the plugin version from its plugin.json; events pulled; events dropped as already seen; events dropped as out of window; candidates shown and held; the state file's entry count; the full path of overnight_card.html; the hero company and its why-now. If nothing was new, say "nothing new since the last run".
+6. Report, in this order: the plugin version from its plugin.json; events pulled; events dropped as already seen; events dropped as out of window; candidates shown and held; the state file's entry count; the full path of overnight_card.html; the hero company and its why-now. If no event was recent enough or new, say "nothing new to show" and give the reason.
 ```
 
 ## First-run check, over two days
@@ -66,12 +66,12 @@ These questions are already answered:
 **Day 1.** Click **Run now** on the task's page, then open the run from its **History** list. If a permission question appears, pick the option that always allows it. Check that:
 
 - [ ] The plugin version is 1.4.0 or later.
-- [ ] The report gives a count of events pulled and the path to `overnight_card.html`, or says "nothing new since the last run".
+- [ ] The report gives a count of events pulled and the path to `overnight_card.html`, or says "nothing new to show" with a reason.
 - [ ] `talent-alpha-state.json` now exists in your folder.
 
 **Day 2.** Let the timetable run it, or click **Run now** on a later day. Check that:
 
-- [ ] The report counts some events as already seen, or says "nothing new since the last run".
+- [ ] The report counts some events as already seen, or says "nothing new to show" with a reason.
 - [ ] No news story from day 1's card shows up again.
 
 Once both days pass, replace **Untested** at the top of this page with the two dates.

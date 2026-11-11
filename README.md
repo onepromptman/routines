@@ -1,6 +1,12 @@
 # Scheduled recipes for Build Radar and Talent Alpha
 
-Status: In prep. The Build Radar recipe ran once on 2026-11-09. The Talent Alpha recipe has not run yet.
+Status: In prep. The Build Radar recipe ran once on 2026-11-09. The Talent Alpha recipe ran twice on 2026-11-10 but has not produced a card yet.
+
+## For testers
+
+Download the tester kit zip from this repository's [Releases](../../releases) page, unzip it, and open **Start here.html**. It walks you through installing both plugins and setting them up, in about 45 minutes, and includes a feedback form.
+
+## Scheduled recipes
 
 These recipes let the Claude desktop app run two OnePromptMan plugins for you on a timetable, so you do not have to remember to ask.
 

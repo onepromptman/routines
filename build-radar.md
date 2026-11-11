@@ -1,10 +1,10 @@
 # Recipe: Build Radar every Monday
 
-**Tested once** on 2026-11-09, on a Windows PC, with a fictional company, Alder Pattern Labs. The run took about five minutes and needed no help.
+**Tested once** on 2026-11-09 with plugin version 1.2.2, on a Windows PC, with a fictional company, Alder Pattern Labs. The run took about five minutes and needed no help.
 
 | | |
 |---|---|
-| Plugin | AI Build Radar 1.2.2, from [onepromptman/build-radar](https://github.com/onepromptman/build-radar) |
+| Plugin | AI Build Radar 1.2.2 or later, from [onepromptman/build-radar](https://github.com/onepromptman/build-radar) |
 | Runs | On your computer, as a local scheduled task in the Claude desktop app |
 | Timetable | Weekly, Monday, 8:07 AM |
 | Writes to | The folder you pick for the task |
