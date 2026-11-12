@@ -10,7 +10,7 @@
 | Writes to | The folder you pick for the task |
 | Sends | Nothing. It contacts no one |
 
-Talent Alpha reads public layoff notices and funding news. Its card names companies and job functions, never people. A person reads the card and decides before anyone is contacted.
+Talent Alpha searches the web for layoff news and funding news. Its card names companies and job functions, never people. A person reads the card and decides before anyone is contacted.
 
 ## Before you start
 

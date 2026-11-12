@@ -15,7 +15,7 @@ Please leave out anything personal: your profile file, your company's name if it
 ## Change something
 
 - Recipes and the front page live here. Edit the Markdown and open a pull request.
-- The plugins' code lives in their own repositories, linked from the README. Changes to how a plugin works go there, not here.
+- Talent Alpha's code lives in its own repository, linked from the README. Build Radar's code ships inside the kit. For a change to how either plugin works, open an issue here first.
 - Plain language, short sentences, no jargon without a one-clause explanation the first time.
 - Line endings are LF. The repository's `.gitattributes` enforces that on commit.
 

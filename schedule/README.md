@@ -4,6 +4,8 @@ Status: In prep. The Build Radar recipe ran once on 2026-11-09. The Talent Alpha
 
 These recipes let the Claude desktop app run the two kit plugins for you on a timetable, so you do not have to remember to ask.
 
+You do not need this page to use the kit. Scheduling is optional, and it needs two things the main steps do not: Python installed on your computer, and the app's Code tab.
+
 - **Build Radar** writes a short weekly briefing on what people building with AI shipped, plus a one-page card. Recipe: [build-radar.md](build-radar.md).
 - **Talent Alpha** checks layoff and funding news every night and writes one ranked card of companies that may now have people open to a role you are hiring for. Recipe: [talent-alpha.md](talent-alpha.md). **Not yet proven.**
 

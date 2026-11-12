@@ -13,9 +13,12 @@ All notable changes to this repository are documented here. The plugins in the k
 ### Changed
 
 - The scheduling recipes moved under `schedule/`.
-- Recipes name the kit's plugin versions: Build Radar 1.2.4 and Talent Alpha 1.5.0.
+- Recipes name the kit's plugin versions: Build Radar 2.0.0 and Talent Alpha 1.5.0.
 - The Build Radar recipe installs from the kit instead of a repository link.
 - Talent Alpha's schedule is labeled "Not yet proven" everywhere, with the same wording.
+- Front page: the two files to upload are named, setup says to make and pick a folder, and "You need" lists the paid plan, web search and the website setting.
+- The Talent Alpha sample card is captioned: it shows filed notices, while the kit's helper uses web search.
+- The schedule page says it is optional and needs Python and the Code tab.
 
 ## [0.1.0] - 2026-11-10
 

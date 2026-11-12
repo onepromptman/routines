@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| Plugin | AI Build Radar 1.2.4 or later, from the [kit download](../README.md) |
+| Plugin | AI Build Radar 2.0.0 or later, from the [kit download](../README.md) |
 | Runs | On your computer, as a local scheduled task in the Claude desktop app |
 | Timetable | Weekly, Monday, 8:07 AM |
 | Writes to | The folder you pick for the task |
@@ -15,7 +15,7 @@
 1. Download the [kit](../README.md), unzip it, and upload `plugins\build-radar.zip` to the Claude desktop app: **Customize > Plugins > Add > Upload plugin**.
 2. Make sure Python 3.10 or later is installed.
 3. Make a new, empty folder, for example `Documents\Build Radar`.
-4. In the desktop app's Code tab, start a chat in that folder and type `set up build radar`. Answer the questions. This saves `onepromptman-profile.md` in the folder. A scheduled run cannot answer questions, so it needs this file first.
+4. In the desktop app's Code tab, start a chat in that folder and type `set up build radar`. Answer the questions, including how much you want to see (standard is a good first pick). This saves `onepromptman-profile.md` in the folder. A scheduled run cannot answer questions, so it needs this file first.
 
 ## Create the task
 
@@ -55,12 +55,12 @@ Click **Run now** on the task's page, then open the run from its **History** lis
 
 The run ends with a short report. Check that:
 
-- [ ] The plugin version is 1.2.4 or later.
+- [ ] The plugin version is 2.0.0 or later.
 - [ ] Feed health reads at least 5/10, and no host is listed as blocked. The test run read 10/10.
 - [ ] `build-radar-runs\<date>\digest.html` and `card.html` exist in your folder. Open both in a browser.
 - [ ] `build-radar-archive.csv` in your folder has new rows.
 
-A week where nothing clears the quality bar is reported as a quiet week. That is a correct result, not a failure.
+A week where nothing clears the quality bar is reported as a quiet week, with any one-source leads listed separately. That is a correct result, not a failure.
 
 A second **Run now** on the same day reports "already ran today" and stops. That keeps the archive free of duplicate rows.
 
