@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| Plugin | AI Build Radar 1.2.2 or later, from [onepromptman/build-radar](https://github.com/onepromptman/build-radar) |
+| Plugin | AI Build Radar 1.2.4 or later, from the [kit download](../README.md) |
 | Runs | On your computer, as a local scheduled task in the Claude desktop app |
 | Timetable | Weekly, Monday, 8:07 AM |
 | Writes to | The folder you pick for the task |
@@ -12,7 +12,7 @@
 
 ## Before you start
 
-1. Install the plugin by following the Get started steps in the [Build Radar README](https://github.com/onepromptman/build-radar#get-started).
+1. Download the [kit](../README.md), unzip it, and upload `plugins\build-radar.zip` to the Claude desktop app: **Customize > Plugins > Add > Upload plugin**.
 2. Make sure Python 3.10 or later is installed.
 3. Make a new, empty folder, for example `Documents\Build Radar`.
 4. In the desktop app's Code tab, start a chat in that folder and type `set up build radar`. Answer the questions. This saves `onepromptman-profile.md` in the folder. A scheduled run cannot answer questions, so it needs this file first.
@@ -55,7 +55,7 @@ Click **Run now** on the task's page, then open the run from its **History** lis
 
 The run ends with a short report. Check that:
 
-- [ ] The plugin version is 1.2.2 or later.
+- [ ] The plugin version is 1.2.4 or later.
 - [ ] Feed health reads at least 5/10, and no host is listed as blocked. The test run read 10/10.
 - [ ] `build-radar-runs\<date>\digest.html` and `card.html` exist in your folder. Open both in a browser.
 - [ ] `build-radar-archive.csv` in your folder has new rows.

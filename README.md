@@ -1,51 +1,49 @@
-# Scheduled recipes for Build Radar and Talent Alpha
+<div align="center">
 
-Status: In prep. The Build Radar recipe ran once on 2026-11-09. The Talent Alpha recipe ran twice on 2026-11-10 but has not produced a card yet.
+# OnePromptMan kit
 
-## For testers
+**Two helpers for the Claude desktop app. No code, no API key.**
 
-Download the tester kit zip from this repository's [Releases](../../releases) page, unzip it, and open **Start here.html**. It walks you through installing both plugins and setting them up, in about 45 minutes, and includes a feedback form.
+**Build Radar** tells you each week what people building with AI shipped.<br/>
+**Talent Alpha** tells you which companies just had layoff or funding news that matters for the role you are hiring.
 
-## Scheduled recipes
+<br/>
 
-These recipes let the Claude desktop app run two OnePromptMan plugins for you on a timetable, so you do not have to remember to ask.
+<a href="https://github.com/onepromptman/routines/releases/latest/download/OnePromptMan-kit.zip">
+  <img src="https://img.shields.io/badge/Download%20the%20kit-ZIP-black?style=for-the-badge&logo=github" alt="Download the kit (ZIP)" height="56">
+</a>
 
-- **Build Radar** writes a short weekly briefing on what people building with AI shipped, plus a one-page card. Recipe: [build-radar.md](build-radar.md).
-- **Talent Alpha** checks layoff and funding news every night and writes one ranked card of people who may now be open to a role you are hiring for. Recipe: [talent-alpha.md](talent-alpha.md). **Untested.**
+<sub>Then unzip it and open <b>Start here.html</b>.</sub>
 
-Each recipe is a message you paste into the app, plus the timetable to pick. The plugins are not in this folder. Each recipe links to the plugin it needs.
+</div>
 
-## How a scheduled task works
+## Three steps
 
-The Claude desktop app has a page called Scheduled. A task there is a saved message plus a timetable. When the time comes, the app opens a new chat by itself, sends the saved message, and keeps the result in that chat and in a folder you choose.
+1. **Download** the ZIP above and unzip it.
+2. **Upload** each file in the `plugins` folder to the Claude desktop app: **Customize > Plugins > Add > Upload plugin**.
+3. **Type** `set up build radar` or `set up talent alpha` in a new Cowork task. Claude asks a few questions and does the rest.
 
-These recipes run on your own computer, so:
+After that, type `run build radar` or `run talent alpha` whenever you want a fresh one.
 
-- The computer has to be awake and the Claude app open at the scheduled time.
-- If the computer was asleep, the app runs the task once when it wakes up. It does not repeat every missed time.
-- Everything stays in a folder on your computer. Nothing is emailed or posted.
+**You need:** the Claude desktop app (Windows or Mac), signed in to your Claude account. Nothing else.
 
-## What you need
+## What you get
 
-- The Claude desktop app, version 1.1.5368 or later, signed in to your Claude account.
-- The plugin named in the recipe, installed on your Claude account.
-- Python 3.10 or later, from [python.org](https://www.python.org/downloads/).
-- One new folder per recipe, where the plugin's setup has run once.
+| | |
+|---|---|
+| ![Build Radar sample card](docs/build-radar-sample.png) | ![Talent Alpha sample card](docs/talent-alpha-sample.png) |
+| **Build Radar.** A short briefing and a one-page card. Every item links to its sources. | **Talent Alpha.** A ranked card of companies, why now, and a line to open with. It names companies, never people, and never contacts anyone. |
 
-## The five steps
+<sub>Sample cards made from fictional companies.</sub>
 
-1. Install the plugin, and make a new, empty folder for it.
-2. Open a chat in that folder and type the setup phrase from the recipe. Answer the questions once.
-3. In the app's Code tab, click **Scheduled**, then **New task**. Fill in the name, the folder, the timetable and the message from the recipe.
-4. Click **Run now** once and watch it. If the app asks for permission, pick the option that always allows it, so later runs do not stop and wait.
-5. Compare the result with the recipe's first-run check.
+## Your data
 
-## Why these run on your computer, not in the cloud
+What you type goes to Claude, like any chat. Your answers and cards are saved only in the folder you choose. Delete the folder to delete them.
 
-Claude can also run scheduled tasks in the cloud while your computer is off. These two plugins do not suit that today, for three reasons from Claude's documentation:
+## More
 
-- A cloud run starts on a fresh machine with a copy of a GitHub repository. The documentation says plugins turned on in your settings do not load there, and it does not say that plugins on your account do ([cloud environments](https://code.claude.com/docs/en/cloud-environments)).
-- A cloud run can only reach an approved list of websites. Eight of Build Radar's ten default news feeds are not on it ([default allowed domains](https://code.claude.com/docs/en/cloud-environments#default-allowed-domains)).
-- A cloud run keeps no files from one run to the next unless it saves them to GitHub ([cloud scheduled tasks](https://code.claude.com/docs/en/routines)). Talent Alpha needs its memory file to survive from night to night.
+- [Run it on a schedule](schedule/README.md) (optional)
+- Source and details: [Talent Alpha](https://github.com/onepromptman/talent-alpha). Build Radar's source is inside the kit.
+- Something broke or confused you? [Open an issue](../../issues).
 
-Claude's page on [desktop scheduled tasks](https://code.claude.com/docs/en/desktop-scheduled-tasks) covers the local option in full.
+[License](LICENSE) · © 2026 OnePromptMan

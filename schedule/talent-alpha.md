@@ -1,10 +1,10 @@
 # Recipe: Talent Alpha every night
 
-**Not yet proven.** Two manual runs on 2026-11-10, with plugin version 1.4.0, finished without errors but found no news recent enough to show, so no card or memory file was made yet. The plugin itself says its memory between scheduled runs is unproven until two runs on different days pass.
+**Not yet proven.** Two manual runs on 2026-11-10, with plugin version 1.4.0, finished without errors but found no news recent enough to show, so no card or memory file was made yet. The kit ships 1.5.0, which this message has not run yet. The plugin itself says its memory between scheduled runs is unproven until two runs on different days pass.
 
 | | |
 |---|---|
-| Plugin | Talent Alpha 1.4.0 or later, from [onepromptman/talent-alpha](https://github.com/onepromptman/talent-alpha) |
+| Plugin | Talent Alpha 1.5.0 or later, from the [kit download](../README.md). Source: [onepromptman/talent-alpha](https://github.com/onepromptman/talent-alpha) |
 | Runs | On your computer, as a local scheduled task in the Claude desktop app |
 | Timetable | Daily, 6:07 AM |
 | Writes to | The folder you pick for the task |
@@ -14,7 +14,7 @@ Talent Alpha reads public layoff notices and funding news. Its card names compan
 
 ## Before you start
 
-1. Install the plugin by following the steps in the [Talent Alpha README](https://github.com/onepromptman/talent-alpha).
+1. Download the [kit](../README.md), unzip it, and upload `plugins\talent-alpha.zip` to the Claude desktop app: **Customize > Plugins > Add > Upload plugin**.
 2. Make sure Python 3.10 or later is installed.
 3. Make a new, empty folder for one open role, for example `Documents\Talent Alpha Test Engineer`.
 4. In the desktop app's Code tab, start a chat in that folder and type `set up talent alpha`. Answer the questions. This saves `onepromptman-profile.md` in the folder.
@@ -65,7 +65,7 @@ These questions are already answered:
 
 **Day 1.** Click **Run now** on the task's page, then open the run from its **History** list. If a permission question appears, pick the option that always allows it. Check that:
 
-- [ ] The plugin version is 1.4.0 or later.
+- [ ] The plugin version is 1.5.0 or later.
 - [ ] The report gives a count of events pulled and the path to `overnight_card.html`, or says "nothing new to show" with a reason.
 - [ ] `talent-alpha-state.json` now exists in your folder.
 
@@ -74,7 +74,7 @@ These questions are already answered:
 - [ ] The report counts some events as already seen, or says "nothing new to show" with a reason.
 - [ ] No news story from day 1's card shows up again.
 
-Once both days pass, replace **Untested** at the top of this page with the two dates.
+Once both days pass, replace **Not yet proven** at the top of this page with the two dates.
 
 ## Where the output lands
 
