@@ -1,23 +1,29 @@
-# OnePromptMan kit
+<div align="center">
 
-[![Download the OnePromptMan kit ZIP](docs/download-kit.svg)](https://github.com/onepromptman/routines/releases/latest/download/OnePromptMan-kit.zip)
+<h1>OnePromptMan kit</h1>
 
-**Two helpers in one download** for the Claude desktop app. No code, no API key.
+<p><b>Two helpers in one download</b> for the Claude desktop app.<br>No code, no API key.</p>
+
+<a href="https://github.com/onepromptman/routines/releases/latest/download/OnePromptMan-kit.zip"><img src="docs/download-kit.svg" alt="Download the OnePromptMan kit ZIP" height="60"></a>
+
+<br><br>
 
 <table>
 <tr>
-<td width="50%" valign="top">
-<a href="#talent-alpha"><img src="docs/talent-alpha-sample.png" alt="A Talent Alpha card for a fictional role, with three fictional companies graded S, A and B"></a>
-<br><b>1. Talent Alpha</b>, for people who hire.<br>Which companies just had layoff or funding news that matters for your open role.
+<td align="center" width="50%">
+<a href="docs/talent-alpha-sample.png"><img src="docs/talent-alpha-thumb.png" alt="A Talent Alpha card for a fictional role, with fictional companies graded S and A" width="100%"></a>
+<br><br><a href="#talent-alpha"><b>Talent Alpha</b></a><br>Companies whose news fits your open role
 </td>
-<td width="50%" valign="top">
-<a href="#build-radar"><img src="docs/build-radar-sample.png" alt="A Build Radar card made from fictional data, with one movement and one thing to try"></a>
-<br><b>2. Build Radar</b>, for people who build with AI.<br>What shipped this week, with sources, and one thing to try.
+<td align="center" width="50%">
+<a href="docs/build-radar-sample.png"><img src="docs/build-radar-thumb.png" alt="A Build Radar card made from fictional data, with one movement and one thing to try" width="100%"></a>
+<br><br><a href="#build-radar"><b>Build Radar</b></a><br>What AI builders shipped this week
 </td>
 </tr>
 </table>
 
-<sub>Sample cards made from fictional companies and data. Click one for details.</sub>
+<sub>Sample cards made from fictional companies and data.</sub>
+
+</div>
 
 ## Try the kit
 
