@@ -4,11 +4,23 @@ All notable changes to this repository are documented here. The plugins in the k
 
 ## [Unreleased]
 
-Front page only. The kit download is unchanged.
+Front page. The sourcing-platform handoff ships with the next Talent Alpha kit.
+
+### Added
+
+- "Why these exist" section on the front page.
+- Talent Alpha section describes the sourcing-platform handoff: results load into a campaign in Noon or Juicebox, or a platform you connect.
+- Status section with test coverage and the feedback line.
 
 ### Changed
 
-- Front page laid out like the Sori page: a download button, a three-step picture, a full-width sample card and a setup illustration for each helper, and a how-it-works diagram.
+- Front page tightened: new headline ("Less reading. Better timing."), real run commands in the intro, the "For" and "The edge" rows cut from the comparison table.
+- Badge reads "The kit never contacts anyone", with a desktop-app-only line under it.
+- "Your data" says what goes to a connected sourcing platform, and that auto-run campaigns send from that platform.
+- Scheduling is labeled optional and still in prep.
+- "You need" says the kit does not run in Claude chat on the web or a phone.
+- Feedback line offers LinkedIn for people without a GitHub account.
+- Front page layout: a download button, a three-step picture, a full-width sample card and a setup illustration for each helper.
 - The Talent Alpha sample card is re-rendered with the plugin's own renderer and web search sources, the way the kit's helper finds news.
 
 ## [0.2.0] - 2026-11-11
