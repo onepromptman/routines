@@ -2,7 +2,11 @@
 
 <h1>OnePromptMan kit</h1>
 
-<p><b>Two helpers in one download</b> for the Claude desktop app.<br>No code, no API key.</p>
+<h3>Two Claude helpers that do the reading for you.</h3>
+
+<p>Talent Alpha reads layoff and funding news for the role you are hiring.<br>Build Radar reads what AI builders ship each week.<br>You install both by uploading a file.</p>
+
+<p><sub>NO CODE &nbsp;·&nbsp; NO API KEY &nbsp;·&nbsp; NOTHING IS SENT FOR YOU</sub></p>
 
 <a href="https://github.com/onepromptman/routines/releases/latest/download/OnePromptMan-kit.zip"><img src="docs/download-kit.svg" alt="Download the OnePromptMan kit ZIP" height="60"></a>
 
@@ -12,11 +16,11 @@
 <tr>
 <td align="center" width="50%">
 <a href="docs/talent-alpha-sample.png"><img src="docs/talent-alpha-thumb.png" alt="A Talent Alpha card for a fictional role, with fictional companies graded S and A" width="100%"></a>
-<br><br><a href="#talent-alpha"><b>Talent Alpha</b></a><br>Companies whose news fits your open role
+<br><br><sub>FOR PEOPLE WHO HIRE</sub><br><a href="#talent-alpha"><b>Talent Alpha</b></a><br>Ranks companies whose news fits your open role
 </td>
 <td align="center" width="50%">
 <a href="docs/build-radar-sample.png"><img src="docs/build-radar-thumb.png" alt="A Build Radar card made from fictional data, with one movement and one thing to try" width="100%"></a>
-<br><br><a href="#build-radar"><b>Build Radar</b></a><br>What AI builders shipped this week
+<br><br><sub>FOR PEOPLE WHO BUILD WITH AI</sub><br><a href="#build-radar"><b>Build Radar</b></a><br>Sums up what AI builders shipped this week
 </td>
 </tr>
 </table>
@@ -25,7 +29,7 @@
 
 </div>
 
-## Try the kit
+## Get started in three steps
 
 1. Click **Download the kit** and unzip it. Open **Start here.html** if you want the guide with pictures.
 2. In the Claude desktop app, open **Customize > Plugins > Add > Upload plugin**. Upload `talent-alpha.zip` and `build-radar.zip` from the `plugins` folder. Do not unzip these two.
