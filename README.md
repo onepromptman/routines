@@ -2,10 +2,22 @@
 
 [![Download the OnePromptMan kit ZIP](docs/download-kit.svg)](https://github.com/onepromptman/routines/releases/latest/download/OnePromptMan-kit.zip)
 
-Two helpers for the Claude desktop app. No code, no API key.
+**Two helpers in one download** for the Claude desktop app. No code, no API key.
 
-- **Talent Alpha** tells you which companies just had layoff or funding news that matters for the role you are hiring.
-- **Build Radar** tells you each week what people building with AI shipped, and one thing to try.
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="#talent-alpha"><img src="docs/talent-alpha-sample.png" alt="A Talent Alpha card for a fictional role, with three fictional companies graded S, A and B"></a>
+<br><b>1. Talent Alpha</b>, for people who hire.<br>Which companies just had layoff or funding news that matters for your open role.
+</td>
+<td width="50%" valign="top">
+<a href="#build-radar"><img src="docs/build-radar-sample.png" alt="A Build Radar card made from fictional data, with one movement and one thing to try"></a>
+<br><b>2. Build Radar</b>, for people who build with AI.<br>What shipped this week, with sources, and one thing to try.
+</td>
+</tr>
+</table>
+
+<sub>Sample cards made from fictional companies and data. Click one for details.</sub>
 
 ## Try the kit
 
@@ -25,8 +37,6 @@ A ranked card of companies with fresh layoff or funding news, graded S, A, B or 
 
 It finds news by web search. It names companies and job functions, never people, and it never contacts anyone. You read the card and decide.
 
-![A Talent Alpha card for a fictional role, with three fictional companies graded S, A and B, each with why now, a hook and web search sources](docs/talent-alpha-sample.png)
-
 Setup is a short conversation about the role you are hiring for:
 
 ![An illustration of the Talent Alpha setup conversation: the role, the skills and location, and which signals to prioritize](docs/talent-alpha-setup.svg)
@@ -35,13 +45,9 @@ Setup is a short conversation about the role you are hiring for:
 
 A short weekly briefing on what people building with AI shipped, written for what you do, plus a one-page card. Every item links to its sources. Nothing is shown as a trend without two independent sources or a clear single-source flag, and every briefing ends with one thing to try.
 
-![A Build Radar card made from fictional data: one movement, its evidence, an adoption map and one thing to try this week](docs/build-radar-sample.png)
-
 Setup asks who the briefing is for and what to watch:
 
 ![An illustration of the Build Radar setup conversation: who it is for, which sources to watch, what to leave out and when to run](docs/build-radar-setup.svg)
-
-<sub>Sample cards are made from fictional companies and data.</sub>
 
 ## How it works
 
