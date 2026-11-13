@@ -2,6 +2,15 @@
 
 All notable changes to this repository are documented here. The plugins in the kit keep their own changelogs.
 
+## [Unreleased]
+
+Front page only. The kit download is unchanged.
+
+### Changed
+
+- Front page laid out like the Sori page: a download button, a three-step picture, a full-width sample card and a setup illustration for each helper, and a how-it-works diagram.
+- The Talent Alpha sample card is re-rendered with the plugin's own renderer and web search sources, the way the kit's helper finds news.
+
 ## [0.2.0] - 2026-11-11
 
 ### Added
