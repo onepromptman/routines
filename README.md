@@ -2,9 +2,9 @@
 
 <h1>OnePromptMan kit</h1>
 
-<h3>Know first. Ignore the rest.</h3>
+<h3>Set it up once. Get better every week.</h3>
 
-<p>Two Claude helpers that read the news for you.<br>One catches hiring moments while they are still fresh.<br>One cuts a week of AI news down to what is worth trying.</p>
+<p>Two Claude helpers that read the news for you.<br>One catches hiring moments while they are still fresh.<br>One cuts a week of AI news down to what is worth trying.<br>Answer a few questions once, then type <code>run</code> whenever you want a fresh card.</p>
 
 <p><sub>NO CODE &nbsp;·&nbsp; NO API KEY &nbsp;·&nbsp; NOTHING IS SENT FOR YOU</sub></p>
 
