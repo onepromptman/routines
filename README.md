@@ -4,9 +4,9 @@
 
 <h3>Less reading. Better timing.</h3>
 
-<p>Two Claude plugins that read the news for you and hand back one card.<br><b>Talent Alpha</b> catches hiring moments while they are still fresh.<br><b>Build Radar</b> cuts a week of AI news down to what is worth trying.<br>Answer a few questions once. Then type <code>run talent alpha</code> or <code>run build radar</code> any time.</p>
+<p>Two helpers that read the news for you and hand back one card.<br><b>Talent Alpha</b> catches hiring moments while they are still fresh.<br><b>Build Radar</b> cuts a week of AI news down to what is worth trying.</p>
 
-<p><sub>NO CODE &nbsp;·&nbsp; NO API KEY &nbsp;·&nbsp; THE KIT NEVER CONTACTS ANYONE</sub><br><sub>Claude desktop plugins and a ChatGPT desktop scheduling option.</sub></p>
+<p><sub>THE KIT NEVER CONTACTS ANYONE</sub><br><sub>Cloud scheduling preview for ChatGPT Dot. Claude desktop plugins for manual runs.</sub></p>
 
 <a href="https://github.com/onepromptman/routines/releases/latest/download/OnePromptMan-kit.zip"><img src="docs/download-kit.svg" alt="Download the OnePromptMan kit ZIP" height="60"></a>
 
@@ -31,8 +31,8 @@
 
 ## Choose Claude or ChatGPT
 
-- **Claude desktop.** Upload the plugins and run them in Cowork. Follow [Claude setup](#get-started-in-claude) or use the [Claude scheduling recipes](schedule/README.md).
-- **ChatGPT desktop.** Use a local project in Codex mode with the [ChatGPT scheduling recipes](schedule/chatgpt-desktop.md). This path uses the scripts in the kit ZIP and needs Python.
+- **ChatGPT Dot cloud preview.** Use the [Dot setup and scheduling prompts](schedule/chatgpt-dot.md) for runs designed to work while your computer is off. Enable the regular schedule after the two cloud checks pass.
+- **Claude desktop.** Follow [Claude setup](#get-started-in-claude) to run a card on demand. [Local schedules](schedule/README.md) need your computer awake. [Claude cloud requirements](schedule/README.md#claude-cloud-scheduled-tasks) explain what its hosted option needs.
 
 ## Why these exist
 
@@ -101,14 +101,14 @@ Then type `run talent alpha` or `run build radar` whenever you want a fresh card
 
 ## Your data
 
-- What you type goes to Claude, like any chat.
-- Your answers and cards stay in the folder you choose. Delete the folder to delete them.
+- What you type goes to the assistant you choose.
+- Claude desktop saves files in your chosen folder. Dot uses a folder on its cloud computer for the profile, results, and run history files.
 - If you connect Noon or Juicebox, the job criteria and target companies go to that account, under its terms. Use an account you own or are allowed to use.
 - The kit never emails or posts. If you turn on automatic outreach in your sourcing platform, that platform sends the messages.
 
 ## Status
 
-Tested on Windows. See the [Claude scheduling status](schedule/README.md) and the [ChatGPT desktop test results](schedule/chatgpt-desktop.md#windows-test-results). Mac still needs a run.
+The [ChatGPT desktop tests](schedule/chatgpt-desktop.md#windows-test-results) passed on Windows. The [Dot cloud recipe](schedule/chatgpt-dot.md#check-two-cloud-runs) still needs two scheduled runs on Dot. See the [Claude scheduling status](schedule/README.md) for its local recipes.
 
 **Tell me what breaks.** [Open an issue](https://github.com/onepromptman/routines/issues), or message me on [LinkedIn](https://www.linkedin.com/in/bryanhong) if you don't have a GitHub account.
 

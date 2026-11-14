@@ -1,5 +1,8 @@
 # ChatGPT desktop scheduled tasks
 
+These recipes need your computer awake and the app running. For a schedule
+that can run with your laptop off, see the [Dot cloud preview](chatgpt-dot.md).
+
 Use this path to run the kit from a local ChatGPT desktop project in Codex mode.
 The task reads the released workflow files and runs their Python scripts. The
 scheduled prompt describes the steps that need a model.

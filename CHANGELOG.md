@@ -8,7 +8,8 @@ Front page. The sourcing-platform handoff ships with the next Talent Alpha kit.
 
 ### Added
 
-- Claude and ChatGPT desktop setup options, with Windows scheduled-run checks for both helpers.
+- A ChatGPT Dot cloud scheduling preview for both helpers, with a pinned kit installer and a two-run check for saved files.
+- Claude and ChatGPT desktop setup options, with Windows scheduled-run results for ChatGPT.
 
 - "Why these exist" section on the front page.
 - Talent Alpha section describes the sourcing-platform handoff: results load into a campaign in Noon or Juicebox, or a platform you connect.
