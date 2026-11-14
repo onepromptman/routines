@@ -6,7 +6,7 @@
 
 <p>Two Claude plugins that read the news for you and hand back one card.<br><b>Talent Alpha</b> catches hiring moments while they are still fresh.<br><b>Build Radar</b> cuts a week of AI news down to what is worth trying.<br>Answer a few questions once. Then type <code>run talent alpha</code> or <code>run build radar</code> any time.</p>
 
-<p><sub>NO CODE &nbsp;·&nbsp; NO API KEY &nbsp;·&nbsp; THE KIT NEVER CONTACTS ANYONE</sub><br><sub>Runs in the Claude desktop app, not in Claude chat on the web or your phone.</sub></p>
+<p><sub>NO CODE &nbsp;·&nbsp; NO API KEY &nbsp;·&nbsp; THE KIT NEVER CONTACTS ANYONE</sub><br><sub>Claude desktop plugins and a ChatGPT desktop scheduling option.</sub></p>
 
 <a href="https://github.com/onepromptman/routines/releases/latest/download/OnePromptMan-kit.zip"><img src="docs/download-kit.svg" alt="Download the OnePromptMan kit ZIP" height="60"></a>
 
@@ -28,6 +28,11 @@
 <sub>Sample cards made from fictional companies and data.</sub>
 
 </div>
+
+## Choose Claude or ChatGPT
+
+- **Claude desktop.** Upload the plugins and run them in Cowork. Follow [Claude setup](#get-started-in-claude) or use the [Claude scheduling recipes](schedule/README.md).
+- **ChatGPT desktop.** Use a local project in Codex mode with the [ChatGPT scheduling recipes](schedule/chatgpt-desktop.md). This path uses the scripts in the kit ZIP and needs Python.
 
 ## Why these exist
 
@@ -82,7 +87,7 @@ Setup asks who the briefing is for and what to watch:
 
 ![An illustration of the Build Radar setup conversation: who it is for, which sources to watch, what to leave out and when to run](docs/build-radar-setup.svg)
 
-## Get started in three steps
+## Get started in Claude
 
 1. **Download** the kit and unzip it. Open **Start here.html** for the picture guide.
 2. **Upload** `talent-alpha.zip` and `build-radar.zip` from the `plugins` folder in the Claude desktop app: **Customize > Plugins > Add > Upload plugin**. Do not unzip these two.
@@ -103,7 +108,7 @@ Then type `run talent alpha` or `run build radar` whenever you want a fresh card
 
 ## Status
 
-Tested on Windows before release. Mac not tried yet. Running them on a schedule is optional and still in prep: see [Run it on a schedule](schedule/README.md).
+Tested on Windows. See the [Claude scheduling status](schedule/README.md) and the [ChatGPT desktop test results](schedule/chatgpt-desktop.md#windows-test-results). Mac still needs a run.
 
 **Tell me what breaks.** [Open an issue](https://github.com/onepromptman/routines/issues), or message me on [LinkedIn](https://www.linkedin.com/in/bryanhong) if you don't have a GitHub account.
 

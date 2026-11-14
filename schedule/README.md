@@ -1,4 +1,6 @@
-# Run the kit on a schedule
+# Run the kit on a schedule in Claude
+
+Using ChatGPT desktop? See the [local scheduling recipes](chatgpt-desktop.md).
 
 Status: In prep. The Build Radar recipe ran once on 2026-11-09. The Talent Alpha recipe ran twice on 2026-11-10 but has not produced a card yet.
 
