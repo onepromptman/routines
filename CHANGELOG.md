@@ -11,6 +11,7 @@ Front page. The sourcing-platform handoff ships with the next Talent Alpha kit.
 - "Why these exist" section on the front page.
 - Talent Alpha section describes the sourcing-platform handoff: results load into a campaign in Noon or Juicebox, or a platform you connect.
 - Status section with test coverage and the feedback line.
+- The campaign handoff is marked as coming in the next kit, says a campaign finds candidates but contacts no one until you turn on outreach, and asks you to use an account you own or are allowed to use.
 
 ### Changed
 

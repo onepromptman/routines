@@ -41,8 +41,8 @@ Routines is where I keep my scheduled agent tasks. These two are the first.
 
 | | **Talent Alpha** | **Build Radar** |
 |---|---|---|
-| **It reads** | Layoff and funding news, by web search, plus your job criteria when you connect a sourcing platform | GitHub and the builder feeds you pick |
-| **You get** | A ranked card of companies, why now, a first line, and an optional campaign in your sourcing platform | A short briefing, a one-page card, and one thing to try |
+| **It reads** | Layoff and funding news, by web search | GitHub and the builder feeds you pick |
+| **You get** | A ranked card of companies, why now, a first line, and an optional campaign in Noon or Juicebox | A short briefing, a one-page card, and one thing to try |
 | **How often** | Whenever you ask | Weekly, or whenever you ask |
 | **It never** | Names people or contacts anyone itself | Calls one source a trend without flagging it |
 
@@ -57,9 +57,9 @@ Routines is where I keep my scheduled agent tasks. These two are the first.
 - Gives you **why now**, the **source links** and a **draft first line**.
 - Stays fresh: layoff news counts for **3 days**, funding news for **7**. Run it again and you only see what is new.
 
-**From card to campaign.** Connect your sourcing platform and Talent Alpha hands it the results. It loads your search criteria, copies the job into a new campaign and points it at the companies you ranked highest. Noon and Juicebox work today, with an account on that platform. Using something else? Tune it to connect the sourcing platform you already use.
+**From card to campaign.** Connect Noon or Juicebox and Talent Alpha turns the card into a sourcing campaign. It copies a job you already run there, keeps your requirements and messages, and points the copy at the companies ranked S and A. Check the first results and adjust once; later campaigns from the same job need less. Using another tool? The same results are saved as a file it can read. This is new in the [Talent Alpha source](https://github.com/onepromptman/talent-alpha#send-the-companies-to-noon-or-juicebox) and arrives in the next kit download.
 
-**The line it does not cross.** The card names companies and job functions, never people. Talent Alpha contacts no one. A campaign only runs on its own if you have set it to auto-run inside your sourcing platform. Otherwise it waits for you.
+**The line it does not cross.** The card names companies and job functions, never people. Talent Alpha contacts no one. A campaign finds candidates for you to review, and no one hears from you unless you turn on automatic outreach in Noon or Juicebox.
 
 Setup is a short conversation about the role you are hiring for:
 
@@ -86,24 +86,24 @@ Setup asks who the briefing is for and what to watch:
 
 1. **Download** the kit and unzip it. Open **Start here.html** for the picture guide.
 2. **Upload** `talent-alpha.zip` and `build-radar.zip` from the `plugins` folder in the Claude desktop app: **Customize > Plugins > Add > Upload plugin**. Do not unzip these two.
-3. **Set up.** Make an empty folder, start a new Cowork task and pick that folder. Type `set up talent alpha` or `set up build radar` and answer a few questions.
+3. **Set up.** Make an empty folder. In the Claude desktop app, start a new Cowork task and pick that folder. Type `set up talent alpha` or `set up build radar` and answer a few questions.
 
 Then type `run talent alpha` or `run build radar` whenever you want a fresh card.
 
 ![The kit in three steps: download the ZIP, upload both plugin files, then set up and run in a Cowork task](docs/quick-start.svg)
 
-**You need:** the Claude desktop app (Windows or Mac) on a paid Claude plan. These do not run in Claude chat on the web or your phone. Talent Alpha also needs web search turned on. Build Radar may ask you to allow some websites; **Start here.html** shows where. No API key, no other account, no code.
+**You need:** the Claude desktop app (Windows or Mac) on a paid Claude plan. Talent Alpha also needs web search turned on. Build Radar may ask you to allow some websites; **Start here.html** shows where. No API key and no code. Campaigns need your own Noon or Juicebox account.
 
 ## Your data
 
 - What you type goes to Claude, like any chat.
 - Your answers and cards stay in the folder you choose. Delete the folder to delete them.
-- If you connect a sourcing platform, the role criteria and target companies go to that platform's account, under its own terms.
-- The kit never emails or posts. A campaign you set to auto-run in your sourcing platform sends from that platform.
+- If you connect Noon or Juicebox, the job criteria and target companies go to that account, under its terms. Use an account you own or are allowed to use.
+- The kit never emails or posts. If you turn on automatic outreach in your sourcing platform, that platform sends the messages.
 
 ## Status
 
-Tested on Windows before release. Mac not tried yet. Running them on a timetable is optional and still in prep: see [Run it on a schedule](schedule/README.md).
+Tested on Windows before release. Mac not tried yet. Running them on a schedule is optional and still in prep: see [Run it on a schedule](schedule/README.md).
 
 **Tell me what breaks.** [Open an issue](https://github.com/onepromptman/routines/issues), or message me on [LinkedIn](https://www.linkedin.com/in/bryanhong) if you don't have a GitHub account.
 
