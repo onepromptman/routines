@@ -19,13 +19,13 @@ Confirm the team, criteria, and first result before scheduling. When the work ch
 
 <table>
 <tr>
-<td align="center" width="50%">
-<a href="docs/talent-alpha-sample.png"><img src="docs/talent-alpha-thumb.png" alt="A Talent Alpha card for a fictional role, with fictional companies graded S and A" width="100%"></a>
-<br><br><sub>FOR PEOPLE WHO HIRE</sub><br><a href="#talent-alpha-timing-is-the-edge"><b>Talent Alpha</b></a><br>Timing is the edge
+<td align="center" valign="top" width="50%">
+<sub>FOR PEOPLE WHO HIRE</sub><br><a href="#talent-alpha-timing-is-the-edge"><b>Talent Alpha</b></a><br>Timing is the edge<br><br>
+<a href="docs/talent-alpha-sample.png"><img src="docs/talent-alpha-sample.png" alt="A Talent Alpha card showing three fictional company signals graded S, A, and B, with a fourth held for review" width="100%"></a>
 </td>
-<td align="center" width="50%">
+<td align="center" valign="top" width="50%">
+<sub>FOR PEOPLE WHO BUILD WITH AI</sub><br><a href="#build-radar-less-news-more-reps"><b>Build Radar</b></a><br>Less news, more reps<br><br>
 <a href="docs/build-radar-sample.png"><img src="docs/build-radar-thumb.png" alt="A Build Radar card made from fictional data, with one movement and one thing to try" width="100%"></a>
-<br><br><sub>FOR PEOPLE WHO BUILD WITH AI</sub><br><a href="#build-radar-less-news-more-reps"><b>Build Radar</b></a><br>Less news, more reps
 </td>
 </tr>
 </table>
