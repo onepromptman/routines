@@ -2,15 +2,20 @@
 
 <h1>OnePromptMan kit</h1>
 
-<h3>Less reading. Better timing.</h3>
+<p><b>Talent Alpha</b> finds company news relevant to the roles you hire for.<br><b>Build Radar</b> gives your team a short AI briefing and one thing to try.</p>
 
-<p>Two Claude plugins that read the news for you and hand back one card.<br><b>Talent Alpha</b> catches hiring moments while they are still fresh.<br><b>Build Radar</b> cuts a week of AI news down to what is worth trying.<br>Answer a few questions once. Then type <code>run talent alpha</code> or <code>run build radar</code> any time.</p>
+<p><sub>THE KIT NEVER CONTACTS ANYONE</sub><br><sub>Cloud scheduling on ChatGPT Dot. Desktop plugins for Claude.</sub></p>
 
-<p><sub>NO CODE &nbsp;·&nbsp; NO API KEY &nbsp;·&nbsp; THE KIT NEVER CONTACTS ANYONE</sub><br><sub>Runs in the Claude desktop app, not in Claude chat on the web or your phone.</sub></p>
+</div>
 
-<a href="https://github.com/onepromptman/routines/releases/latest/download/OnePromptMan-kit.zip"><img src="docs/download-kit.svg" alt="Download the OnePromptMan kit ZIP" height="60"></a>
+## Choose where to run
 
-<br><br>
+- **[Set up in ChatGPT Dot](schedule/chatgpt-dot.md#first-time-setup).** Paste one prompt into Your dot. It checks its cloud computer, asks about your team and what to run, and saves those choices for future runs. Cloud schedules can run while your computer is off.
+- **[Set up in Claude Cowork](#get-started-in-claude).** Download the kit and run a short setup conversation for each helper you want. For automatic local runs, follow the [Claude schedule guide](schedule/README.md).
+
+Confirm the team, criteria, and first result before scheduling. When the work changes, update the same saved settings. [Change your Dot setup](schedule/chatgpt-dot.md#change-what-the-routines-track) or rerun the Claude setup command in the same folder.
+
+<div align="center">
 
 <table>
 <tr>
@@ -42,8 +47,8 @@ Routines is where I keep my scheduled agent tasks. These two are the first.
 | | **Talent Alpha** | **Build Radar** |
 |---|---|---|
 | **It reads** | Layoff and funding news, by web search | GitHub and the builder feeds you pick |
-| **You get** | A ranked card of companies, why now, a first line, and an optional campaign in Noon or Juicebox | A short briefing, a one-page card, and one thing to try |
-| **How often** | Whenever you ask | Weekly, or whenever you ask |
+| **You get** | A ranked role-specific card with company signals, sources, and a draft first line | A short briefing and one thing to try, plus a one-page card on Dot or by request in Claude |
+| **How often** | Daily on a schedule, or whenever you ask | Weekly on a schedule, or whenever you ask |
 | **It never** | Names people or contacts anyone itself | Calls one source a trend without flagging it |
 
 ## Talent Alpha: timing is the edge
@@ -52,16 +57,14 @@ Routines is where I keep my scheduled agent tasks. These two are the first.
 
 **What it does.**
 
-- Searches the web for layoff and funding-distress news.
+- Searches the web for layoffs and signs a company is struggling to raise money.
 - Grades each company **S, A, B or C** on how well the news fits your open role.
 - Gives you **why now**, the **source links** and a **draft first line**.
 - Stays fresh: layoff news counts for **3 days**, funding news for **7**. Run it again and you only see what is new.
 
-**From card to campaign.** Connect Noon or Juicebox and Talent Alpha turns the card into a sourcing campaign. It copies a job you already run there, keeps your requirements and messages, and points the copy at the companies ranked S and A. Check the first results and adjust once; later campaigns from the same job need less. Using another tool? The same results are saved as a file it can read. This is new in the [Talent Alpha source](https://github.com/onepromptman/talent-alpha#send-the-companies-to-noon-or-juicebox) and arrives in the next kit download.
+**Coming in the next kit.** The [Talent Alpha source](https://github.com/onepromptman/talent-alpha#send-the-companies-to-noon-or-juicebox) has a campaign handoff for Noon and Juicebox. It uses your existing job's requirements and targets the companies ranked S and A. Review the results in your sourcing platform.
 
-**The line it does not cross.** The card names companies and job functions, never people. Talent Alpha contacts no one. A campaign finds candidates for you to review, and no one hears from you unless you turn on automatic outreach in Noon or Juicebox.
-
-Setup is a short conversation about the role you are hiring for:
+The card names companies and job functions. Setup asks about your organization, the hiring team, and the roles you want to track. In Dot, a shared schedule can run each approved role in turn and save a separate card and history per role.
 
 ![An illustration of the Talent Alpha setup conversation: the role, the skills and location, and which signals to prioritize](docs/talent-alpha-setup.svg)
 
@@ -73,7 +76,7 @@ Setup is a short conversation about the role you are hiring for:
 
 - Scans GitHub and the builder feeds you choose.
 - Throws out anything without evidence. Nothing counts as a trend without **two independent sources**, or a flag that it has only one.
-- Groups what is left into **a few movements**, written for what you build.
+- Groups the news into **a few trends**, written for what your team builds.
 - Ends every briefing with **one experiment to try** this week.
 
 **You set the filter.** Tell it what you build and who you build for. It filters for your path, not the feed's.
@@ -82,28 +85,28 @@ Setup asks who the briefing is for and what to watch:
 
 ![An illustration of the Build Radar setup conversation: who it is for, which sources to watch, what to leave out and when to run](docs/build-radar-setup.svg)
 
-## Get started in three steps
+## Get started in Claude
 
-1. **Download** the kit and unzip it. Open **Start here.html** for the picture guide.
-2. **Upload** `talent-alpha.zip` and `build-radar.zip` from the `plugins` folder in the Claude desktop app: **Customize > Plugins > Add > Upload plugin**. Do not unzip these two.
-3. **Set up.** Make an empty folder. In the Claude desktop app, start a new Cowork task and pick that folder. Type `set up talent alpha` or `set up build radar` and answer a few questions.
+<a href="https://github.com/onepromptman/routines/releases/latest/download/OnePromptMan-kit.zip"><img src="docs/download-kit.svg" alt="Download the kit for Claude Cowork" height="60"></a>
 
-Then type `run talent alpha` or `run build radar` whenever you want a fresh card.
+1. **Download** and unzip the kit, then open **Start here.html**.
+2. **Upload** the plugin ZIP you want from the `plugins` folder. In Claude desktop, go to **Customize > Plugins > Add > Upload plugin** and pick the ZIP as downloaded.
+3. **Set up.** Start a Cowork task in a new folder. Type `set up talent alpha` or `set up build radar`. Answer the setup questions and confirm where Claude saved your settings. Keep a separate folder for each hiring role you want to schedule.
+4. **Try it.** In the same folder, type `run talent alpha` or `run build radar`. Check that the results reflect your role or team's priorities. For the one-page Build Radar card, follow with `make the radar card`.
 
 ![The kit in three steps: download the ZIP, upload both plugin files, then set up and run in a Cowork task](docs/quick-start.svg)
 
-**You need:** the Claude desktop app (Windows or Mac) on a paid Claude plan. Talent Alpha also needs web search turned on. Build Radar may ask you to allow some websites; **Start here.html** shows where. No API key and no code. Campaigns need your own Noon or Juicebox account.
+You need the Claude desktop app (Windows or Mac) on a paid Claude plan. Talent Alpha needs web search. Build Radar may ask for access to your selected news sites. The [Claude scheduling guide](schedule/README.md) covers local schedules and the [requirements for Claude cloud](schedule/README.md#claude-cloud-scheduled-tasks).
 
 ## Your data
 
-- What you type goes to Claude, like any chat.
-- Your answers and cards stay in the folder you choose. Delete the folder to delete them.
-- If you connect Noon or Juicebox, the job criteria and target companies go to that account, under its terms. Use an account you own or are allowed to use.
-- The kit never emails or posts. If you turn on automatic outreach in your sourcing platform, that platform sends the messages.
+- What you type goes to the assistant you choose.
+- Claude desktop saves files in your chosen folder. Dot uses a folder on its cloud computer for the profile, results, and run history files.
+- The current kit keeps the results in your chosen app and files. It does not email, post, or contact candidates.
 
 ## Status
 
-Tested on Windows before release. Mac not tried yet. Running them on a schedule is optional and still in prep: see [Run it on a schedule](schedule/README.md).
+Both helpers passed [first-time setup and separate persistence checks on Dot](schedule/chatgpt-dot.md#dot-cloud-test-results). The first-time Talent Alpha test used two fictional hiring scopes with separate profiles and histories. See the [ChatGPT desktop tests](schedule/chatgpt-desktop.md#windows-test-results) and [Claude scheduling status](schedule/README.md) for the local recipes.
 
 **Tell me what breaks.** [Open an issue](https://github.com/onepromptman/routines/issues), or message me on [LinkedIn](https://www.linkedin.com/in/bryanhong) if you don't have a GitHub account.
 

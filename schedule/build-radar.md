@@ -40,7 +40,7 @@ These questions are already answered:
 - Keep the saved source list, whatever its review date.
 
 1. If the working folder has no onepromptman-profile.md, or the file has no "## Kit: build-radar" block, report that and stop.
-2. If build-radar-runs/<today>/digest.html already exists, report "already ran today" and stop, so the archive gets no duplicate rows.
+2. If today's digest.html, card.html, and the archive all exist, report "already ran today" and stop. If one or more are missing after a partial run, report which files need recovery before rerunning the pipeline.
 3. Run the build-radar:build-radar skill, with that plugin prefix. If feed health is below 0.5, do not ask: stop before scoring and report every blocked host and failed feed.
 4. If digest.html was written, run the build-radar:build-radar-card skill, with that plugin prefix, on today's run folder.
 5. Send, post, publish and push nothing. Open no browser and no file in a window.
@@ -51,12 +51,12 @@ The skill names carry the `build-radar:` prefix on purpose. It makes the run use
 
 ## First-run check
 
-Click **Run now** on the task's page, then open the run from its **History** list. If a permission question appears, pick the option that always allows it.
+Click **Run now** on the task's page, then open the run from **History**. Review requests for the selected folder, the kit's Python scripts, and the news sites in your profile.
 
 The run ends with a short report. Check that:
 
 - [ ] The plugin version is 2.0.0 or later.
-- [ ] Feed health reads at least 5/10, and no host is listed as blocked. The test run read 10/10.
+- [ ] At least half of the selected feeds responded. Note any blocked hosts separately. The test run read 10/10.
 - [ ] `build-radar-runs\<date>\digest.html` and `card.html` exist in your folder. Open both in a browser.
 - [ ] `build-radar-archive.csv` in your folder has new rows.
 

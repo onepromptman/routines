@@ -17,7 +17,7 @@ Talent Alpha searches the web for layoff news and funding news. Its card names c
 1. Download the [kit](../README.md), unzip it, and upload `plugins\talent-alpha.zip` to the Claude desktop app: **Customize > Plugins > Add > Upload plugin**.
 2. Make sure Python 3.10 or later is installed.
 3. Make a new, empty folder for one open role, for example `Documents\Talent Alpha Test Engineer`.
-4. In the desktop app's Code tab, start a chat in that folder and type `set up talent alpha`. Answer the questions. This saves `onepromptman-profile.md` in the folder.
+4. In the desktop app's Code tab, start a chat in that folder and type `set up talent alpha`. Confirm the organization, team, and role to track. This saves `onepromptman-profile.md` in the folder. For another role, repeat setup and create a task pointing to that role's folder.
 5. Setup checks that the chat has web search, and says so if it is missing. The scan pulls all its news through web search, so it cannot run without it.
 
 ## Where its memory lives
@@ -58,16 +58,16 @@ These questions are already answered:
 3. Run the talent-alpha:talent-alpha skill, with that plugin prefix. Use the state_file path from the profile, and never delete or move that file.
 4. If an agent halts needing input, do not ask. Stop, list what it needed, and do not record state.
 5. Contact nobody. Send, post, publish and push nothing. Open no browser and no file in a window.
-6. Report, in this order: the plugin version from its plugin.json; events pulled; events dropped as already seen; events dropped as out of window; candidates shown and held; the state file's entry count; the full path of overnight_card.html; the hero company and its why-now. If no event was recent enough or new, say "nothing new to show" and give the reason.
+6. Report the plugin version, source coverage, event counts, state entry count, and card path if published. List any required sources you could not reach and label that scan incomplete. For a completed scan with no matches, say "nothing new to show" and give the reason.
 ```
 
 ## First-run check, over two days
 
-**Day 1.** Click **Run now** on the task's page, then open the run from its **History** list. If a permission question appears, pick the option that always allows it. Check that:
+**Day 1.** Click **Run now** on the task's page, then open the run from **History**. Review requests for the role folder, the kit's Python scripts, and web search. Check the following.
 
 - [ ] The plugin version is 1.5.0 or later.
 - [ ] The report gives a count of events pulled and the path to `overnight_card.html`, or says "nothing new to show" with a reason.
-- [ ] `talent-alpha-state.json` now exists in your folder.
+- [ ] If the routine published a card, the state file now exists in your role folder. A quiet first run may leave no state file. To verify deduplication immediately, use the [fictional fixture](chatgpt-dot.md#check-two-cloud-runs) in a separate test folder.
 
 **Day 2.** Let the timetable run it, or click **Run now** on a later day. Check that:
 

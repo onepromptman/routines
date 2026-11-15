@@ -4,25 +4,19 @@ All notable changes to this repository are documented here. The plugins in the k
 
 ## [Unreleased]
 
-Front page. The sourcing-platform handoff ships with the next Talent Alpha kit.
+The sourcing-platform handoff ships with the next Talent Alpha kit.
 
 ### Added
 
-- "Why these exist" section on the front page.
-- Talent Alpha section describes the sourcing-platform handoff: results load into a campaign in Noon or Juicebox, or a platform you connect.
-- Status section with test coverage and the feedback line.
-- The campaign handoff is marked as coming in the next kit, says a campaign finds candidates but contacts no one until you turn on outreach, and asks you to use an account you own or are allowed to use.
+- ChatGPT Dot cloud scheduling for both helpers, with a pinned installer and a first-time setup prompt.
+- Talent Alpha role-specific profiles, state, and output instructions for one shared Dot schedule or separate role schedules.
+- ChatGPT desktop recipes with Windows scheduled-run results, and Dot cloud file reuse results.
 
 ### Changed
 
-- Front page tightened: new headline ("Less reading. Better timing."), real run commands in the intro, the "For" and "The edge" rows cut from the comparison table.
-- Badge reads "The kit never contacts anyone", with a desktop-app-only line under it.
-- "Your data" says what goes to a connected sourcing platform, and that auto-run campaigns send from that platform.
-- Scheduling is labeled optional and still in prep.
-- "You need" says the kit does not run in Claude chat on the web or a phone.
-- Feedback line offers LinkedIn for people without a GitHub account.
-- Front page layout: a download button, a three-step picture, a full-width sample card and a setup illustration for each helper.
-- The Talent Alpha sample card is re-rendered with the plugin's own renderer and web search sources, the way the kit's helper finds news.
+- The front page links to Dot and Claude Cowork setup before the sample cards.
+- The installer checks required kit files when reusing an install and handles overlapping setup calls.
+- Scheduled checks report blocked sources and partial outputs. Claude desktop recipes describe the permissions each routine needs.
 
 ## [0.2.0] - 2026-11-11
 

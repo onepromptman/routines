@@ -1,4 +1,7 @@
-# Run the kit on a schedule
+# Run the kit on a schedule in Claude
+
+For laptop-off scheduling, see the [ChatGPT Dot cloud guide](chatgpt-dot.md).
+The [ChatGPT desktop recipes](chatgpt-desktop.md) run on your computer.
 
 Status: In prep. The Build Radar recipe ran once on 2026-11-09. The Talent Alpha recipe ran twice on 2026-11-10 but has not produced a card yet.
 
@@ -31,17 +34,22 @@ These recipes run on your own computer, so:
 ## The five steps
 
 1. Upload the plugin from the kit, and make a new, empty folder for it.
-2. Open a chat in that folder and type the setup phrase from the recipe. Answer the questions once.
+2. Open a chat in that folder and type the setup phrase from the recipe. Confirm who the work is for and what it should look at. For Talent Alpha, repeat setup in a separate folder for each role you plan to schedule.
 3. In the app's Code tab, click **Scheduled**, then **New task**. Fill in the name, the folder, the timetable and the message from the recipe.
-4. Click **Run now** once and watch it. If the app asks for permission, pick the option that always allows it, so later runs do not stop and wait.
+4. Click **Run now** once and watch it. Review each permission request. Allow the chosen folder, Python scripts, and web access required by the recipe.
 5. Compare the result with the recipe's first-run check.
 
-## Why these run on your computer, not in the cloud
+To change the scope later, run the setup command in the same folder and
+review the updated profile and one test result. Keep the history for that
+role. A new role gets its own setup folder and schedule.
 
-Claude can also run scheduled tasks in the cloud while your computer is off. These two plugins do not suit that today, for three reasons from Claude's documentation:
+## Claude cloud scheduled tasks
 
-- A cloud run starts on a fresh machine with a copy of a GitHub repository. The documentation says plugins turned on in your settings do not load there, and it does not say that plugins on your account do ([cloud environments](https://code.claude.com/docs/en/cloud-environments)).
-- A cloud run can only reach an approved list of websites. Eight of Build Radar's ten default news feeds are not on it ([default allowed domains](https://code.claude.com/docs/en/cloud-environments#default-allowed-domains)).
-- A cloud run keeps no files from one run to the next unless it saves them to GitHub ([cloud scheduled tasks](https://code.claude.com/docs/en/routines)). Talent Alpha needs its memory file to survive from night to night.
+Claude can run scheduled tasks while your computer is off. These local recipes need changes for that environment:
+
+- Make the kit files and Python available in the cloud environment, and allow its required feed hosts. See [cloud environments](https://code.claude.com/docs/en/cloud-environments).
+- Connect a durable storage service for the Build Radar archive, Talent Alpha's seen-event file, and the cards. Claude clones attached repositories on each new run and can use connected services. See [cloud scheduled tasks](https://code.claude.com/docs/en/routines).
+
+The Claude cloud version is still in prep. The shipped recipes below the kit download use local storage.
 
 Claude's page on [desktop scheduled tasks](https://code.claude.com/docs/en/desktop-scheduled-tasks) covers the local option in full.

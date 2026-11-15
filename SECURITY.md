@@ -2,7 +2,7 @@
 
 ## What this repository holds
 
-Recipes (Markdown) and a downloadable kit. The kit's plugins run inside the Claude desktop app on your computer. They read public websites, write files only into the folder you choose, and send nothing anywhere else.
+This repository holds the recipes, Dot installer, and kit download. The helpers read public websites. Claude Cowork writes outputs to the folder you choose on your computer. The Dot recipe saves profiles, outputs, and run history on Dot's cloud computer and returns results in ChatGPT.
 
 ## Report a problem
 
@@ -12,12 +12,12 @@ Please do not post exploit details in a public issue.
 
 ## What counts
 
-- A plugin reading or writing outside the folder you chose.
-- A plugin sending data anywhere other than the public sites it reads and Claude itself.
+- A routine reading or writing outside its approved sources and workspace.
+- A routine sharing data outside the app and delivery location you approved.
 - A secret, an API key or personal data committed to this repository or shipped in the kit.
 - A way to make a scheduled run take an action the recipe says it never takes (send, post, publish, push).
 
 ## What does not count
 
-- Behavior of the Claude desktop app itself. Report that to Anthropic.
+- Behavior of the host app itself. Report Claude issues to Anthropic and ChatGPT issues to OpenAI.
 - A public website refusing or rate-limiting a request.
