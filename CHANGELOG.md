@@ -8,7 +8,7 @@ Front page. The sourcing-platform handoff ships with the next Talent Alpha kit.
 
 ### Added
 
-- A ChatGPT Dot cloud scheduling preview for both helpers, with a pinned kit installer and a two-run check for saved files.
+- ChatGPT Dot cloud scheduling for both helpers, with a pinned kit installer and verified file reuse on a scheduled follow-up.
 - Claude and ChatGPT desktop setup options, with Windows scheduled-run results for ChatGPT.
 
 - "Why these exist" section on the front page.

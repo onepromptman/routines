@@ -1,6 +1,6 @@
 # Run the kit on ChatGPT Dot
 
-This preview uses your dot's cloud computer to run Build Radar and Talent Alpha
+Use your dot's cloud computer to run Build Radar and Talent Alpha
 while your laptop is off. Plan for one setup conversation. The regular runs
 use the same files and return their results in ChatGPT. Start with the cloud
 checks below before relying on either schedule.
@@ -88,22 +88,24 @@ only and keep recruiting platforms and outreach out of this task.
 
 ## Check two cloud runs
 
-1. Create short test schedules for both helpers. Use a fictional Talent
-   Alpha role and separate cloud test folders. Keep your laptop disconnected
-   from Dot for setup and both automatic launches.
-2. On the first launch, check that Build Radar returns feed health, a digest,
-   a visual card, and an archive. For Talent Alpha, a live quiet run counts
-   as a search check. Also have Dot run the released Talent Alpha fixture
-   below during that scheduled run. Keep the fixture's card, `raw.json`,
-   and `state.json` in the cloud test folder for the next launch.
-3. On the next automatic launch, same day for Build Radar, compare the
+1. Set up separate cloud test folders and a fictional Talent Alpha role.
+   Keep your laptop disconnected from Dot during both runs to verify that
+   the cloud computer can do the work on its own.
+2. Run both checks on demand in Dot. Check that Build Radar reports feed
+   health and saves the digest, visual card, and archive. Have Dot run the
+   released Talent Alpha fixture below. Keep the fixture's card, `raw.json`,
+   and `state.json` in the cloud test folder for the next launch. If you
+   also try a live search, check which sources were reachable before
+   interpreting an empty result.
+3. Schedule a follow-up for each helper, on the same UTC day for Build Radar.
+   On that launch, confirm Build Radar reuses both HTML files and compare the
    archive row count and checksum with the first run. Have Talent Alpha
    run the released `state.py dedupe` on the first run's fixture input and
    state. Verify zero new events, one already seen event, and an unchanged
    state file. Keep the fixture within the seven-day source window.
-4. Pause the test schedules and use the regular schedules after both
-   checks pass. A missing cloud workspace or newly empty state file is a
-   failed persistence check.
+4. Confirm the follow-ups in Dot's scheduled run history. Pause the test
+   schedules and use the regular schedules after both checks pass. A missing
+   cloud workspace or newly empty state file means the persistence check failed.
 
 From the cloud workspace, Dot can run the fixture with this command in a
 Python environment with pytest installed. Use a fresh test output folder:
@@ -123,10 +125,21 @@ python3 kit/v0.2.0/talent-alpha/skills/talent-alpha/scripts/state.py dedupe \
   --out "$FIXTURE_DIR/cloud-repeat.json"
 ```
 
-The Linux checks exercise the installer and released scripts. The two
-automatic runs have been verified on ChatGPT desktop with local files.
-Dot cloud scheduling and file reuse across its scheduled runs are still
-unverified.
+## Dot cloud test results
+
+Each helper ran on demand first and then in a separate scheduled launch.
+Neither run used the desktop. The desktop reconnected after testing started.
+
+| Helper | First cloud run | Scheduled cloud follow-up |
+| --- | --- | --- |
+| Build Radar | Reached 10 of 10 feeds, scored 67 records, generated both HTML files, and saved 26 archive rows. | Found both HTML files and skipped regeneration. The archive still had 26 rows and its SHA-256 matched. |
+| Talent Alpha | The released fictional fixture generated a card and saved its seen-event file. | Found the saved fixture and reported zero new events and one already seen. The state file checksum matched. |
+
+Talent Alpha's live search found no verified matches for the fictional role.
+Colorado WARN sources returned HTTP 403 and 502, so live source coverage
+was incomplete. The tests verified persistence from an on-demand launch to
+a scheduled launch. A pair of automatic launches and the regular daily and
+weekly cadences remain to be tested.
 
 [release]: https://github.com/onepromptman/routines/releases/tag/v0.2.0
 [cloud]: https://learn.chatgpt.com/docs/dots/computers-and-apps

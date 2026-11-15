@@ -1,6 +1,6 @@
 # Run the kit on a schedule in Claude
 
-For laptop-off scheduling, see the [ChatGPT Dot cloud preview](chatgpt-dot.md).
+For laptop-off scheduling, see the [ChatGPT Dot cloud guide](chatgpt-dot.md).
 The [ChatGPT desktop recipes](chatgpt-desktop.md) run on your computer.
 
 Status: In prep. The Build Radar recipe ran once on 2026-11-09. The Talent Alpha recipe ran twice on 2026-11-10 but has not produced a card yet.

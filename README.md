@@ -6,7 +6,7 @@
 
 <p>Two helpers that read the news for you and hand back one card.<br><b>Talent Alpha</b> catches hiring moments while they are still fresh.<br><b>Build Radar</b> cuts a week of AI news down to what is worth trying.</p>
 
-<p><sub>THE KIT NEVER CONTACTS ANYONE</sub><br><sub>Cloud scheduling preview for ChatGPT Dot. Claude desktop plugins for manual runs.</sub></p>
+<p><sub>THE KIT NEVER CONTACTS ANYONE</sub><br><sub>Cloud scheduling on ChatGPT Dot. Desktop plugins for Claude.</sub></p>
 
 <a href="https://github.com/onepromptman/routines/releases/latest/download/OnePromptMan-kit.zip"><img src="docs/download-kit.svg" alt="Download the OnePromptMan kit ZIP" height="60"></a>
 
@@ -31,7 +31,7 @@
 
 ## Choose Claude or ChatGPT
 
-- **ChatGPT Dot cloud preview.** Use the [Dot setup and scheduling prompts](schedule/chatgpt-dot.md) for runs designed to work while your computer is off. Enable the regular schedule after the two cloud checks pass.
+- **ChatGPT Dot cloud.** Use the [Dot setup and scheduling prompts](schedule/chatgpt-dot.md) to run while your computer is off. Verify that a scheduled run finds the files from an initial cloud run before enabling your regular schedule.
 - **Claude desktop.** Follow [Claude setup](#get-started-in-claude) to run a card on demand. [Local schedules](schedule/README.md) need your computer awake. [Claude cloud requirements](schedule/README.md#claude-cloud-scheduled-tasks) explain what its hosted option needs.
 
 ## Why these exist
@@ -108,7 +108,7 @@ Then type `run talent alpha` or `run build radar` whenever you want a fresh card
 
 ## Status
 
-The [ChatGPT desktop tests](schedule/chatgpt-desktop.md#windows-test-results) passed on Windows. The [Dot cloud recipe](schedule/chatgpt-dot.md#check-two-cloud-runs) still needs two scheduled runs on Dot. See the [Claude scheduling status](schedule/README.md) for its local recipes.
+Both [Dot cloud persistence tests](schedule/chatgpt-dot.md#dot-cloud-test-results) passed. Each helper saved files on an on-demand cloud run and found them on a separate scheduled cloud run. Talent Alpha used a fictional fixture to verify deduplication. The [ChatGPT desktop tests](schedule/chatgpt-desktop.md#windows-test-results) passed on Windows. See the [Claude scheduling status](schedule/README.md) for its local recipes.
 
 **Tell me what breaks.** [Open an issue](https://github.com/onepromptman/routines/issues), or message me on [LinkedIn](https://www.linkedin.com/in/bryanhong) if you don't have a GitHub account.
 
